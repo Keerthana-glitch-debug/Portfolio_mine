@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Keerthana G — AR/VR Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">Keerthana <em>G.</em></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Hamburger for mobile -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<div class="hero" id="hero">
+  <div class="container">
+    <div class="hero-label">AR / VR Developer &amp; Designer</div>
+    <h1 class="hero-name">Keerthana G.</h1>
+    <div class="hero-name-rule"></div>
+    <p class="hero-intro">
+      I design and build <strong>immersive digital experiences</strong> — spanning augmented reality, virtual environments, 3D systems, and polished user interfaces. I work at the intersection of engineering and design.
+    </p>
+    <div class="hero-meta">
+      <span>📍 <b>Tamil Nadu, India</b></span>
+      <span>🎓 <b>B.E CSE — NEC Kovilpatti</b></span>
+      <span>🟢 <b id="typedStatus"></b></span>
+    </div>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section reveal" id="about">
+  <div class="container">
+    <div class="s-header">
+      <span class="s-num">01</span>
+      <h2 class="s-title">About Me</h2>
+    </div>
+    <div class="about-body">
+      <div class="about-text">
+        <p>I'm a Computer Science &amp; Engineering student at National Engineering College, Kovilpatti, with a domain specialisation in <strong>Augmented and Virtual Reality</strong>. I'm drawn to the challenge of making technology feel intuitive, spatial, and human.</p>
+        <p>My work spans building interactive 3D environments in Unity and Unreal Engine, crafting detailed 3D assets in Blender, and designing clean product interfaces in Figma. I believe the best immersive experiences are built by people who understand both the technical depth and the design intent behind them.</p>
+        <p>Outside my core domain, I enjoy frontend development and have a strong foundation in Java and C++ — skills that feed directly into performant, well-structured XR applications.</p>
+      </div>
+      <div class="about-facts">
+        <div class="fact"><div class="fact-label">Degree</div><div class="fact-value">B.E — CSE</div></div>
+        <div class="fact"><div class="fact-label">College</div><div class="fact-value">National Engineering College, Kovilpatti</div></div>
+        <div class="fact"><div class="fact-label">Domain</div><div class="fact-value">Augmented &amp; Virtual Reality</div></div>
+        <div class="fact"><div class="fact-label">Batch</div><div class="fact-value">2022 – 2026</div></div>
+        <div class="fact"><div class="fact-label">Location</div><div class="fact-value">Tamil Nadu, India</div></div>
+        <div class="fact"><div class="fact-label">Email</div><div class="fact-value">keerthana020706@gmail.com</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section reveal" id="skills">
+  <div class="container">
+    <div class="s-header">
+      <span class="s-num">02</span>
+      <h2 class="s-title">Skills</h2>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="skill-filters" id="skillFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="immersive">Immersive Tech</button>
+      <button class="filter-btn" data-filter="design">3D &amp; Design</button>
+      <button class="filter-btn" data-filter="programming">Programming</button>
+    </div>
+
+    <div class="skills-group" data-category="immersive">
+      <div class="skills-group-title">Immersive Technology</div>
+      <div class="skills-chips">
+        <span class="chip highlight">Unity</span>
+        <span class="chip highlight">Unreal Engine</span>
+        <span class="chip highlight">AR Development</span>
+        <span class="chip highlight">VR Development</span>
+        <span class="chip">XR Design</span>
+        <span class="chip">Spatial UI</span>
+      </div>
+    </div>
+
+    <div class="skills-group" data-category="design">
+      <div class="skills-group-title">3D &amp; Design</div>
+      <div class="skills-chips">
+        <span class="chip highlight">Blender</span>
+        <span class="chip highlight">Figma</span>
+        <span class="chip">3D Modelling</span>
+        <span class="chip">UI / UX Design</span>
+        <span class="chip">Prototyping</span>
+        <span class="chip">Wireframing</span>
+      </div>
+    </div>
+
+    <div class="skills-group" data-category="programming">
+      <div class="skills-group-title">Programming</div>
+      <div class="skills-chips">
+        <span class="chip highlight">C++</span>
+        <span class="chip highlight">Java</span>
+        <span class="chip">HTML &amp; CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">C# (Unity)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section reveal" id="projects">
+  <div class="container">
+    <div class="s-header">
+      <span class="s-num">03</span>
+      <h2 class="s-title">Projects</h2>
+    </div>
+
+    <!-- PROJECT 1 -->
+    <div class="project-item">
+      <div>
+        <div class="project-top">
+          <span class="project-idx">01 —</span>
+          <h3 class="project-name">Restaurant Ordering App</h3>
+        </div>
+        <p class="project-desc">
+          A high-fidelity interactive prototype for a restaurant food ordering application, designed entirely in Figma. The prototype covers the full customer journey — from browsing the menu and customising orders to checkout and order tracking — with a clean, intuitive interface focused on ease of use and visual hierarchy. Includes component systems, auto-layout, and interactive flows.
+        </p>
+        <div class="project-tags">
+          <span class="p-tag">Figma</span>
+          <span class="p-tag">UI / UX Design</span>
+          <span class="p-tag">Prototyping</span>
+          <span class="p-tag">User Flows</span>
+          <span class="p-tag">Component Design</span>
+        </div>
+      </div>
+      <a href="#" class="project-link-btn" title="View Project">&#8599;</a>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-item">
+      <div>
+        <div class="project-top">
+          <span class="project-idx">02 —</span>
+          <h3 class="project-name">Freelancer Management System</h3>
+        </div>
+        <p class="project-desc">
+          A desktop application built with Java to manage freelancer workflows — covering client onboarding, project assignment, deadline tracking, invoice generation, and payment status. Designed with an object-oriented architecture using core Java principles including inheritance, encapsulation, and file I/O. Provides a structured backend for managing multiple freelancers and project pipelines efficiently.
+        </p>
+        <div class="project-tags">
+          <span class="p-tag">Java</span>
+          <span class="p-tag">OOP</span>
+          <span class="p-tag">Desktop App</span>
+          <span class="p-tag">File I/O</span>
+          <span class="p-tag">System Design</span>
+        </div>
+      </div>
+      <a href="#" class="project-link-btn" title="View Project">&#8599;</a>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-item">
+      <div>
+        <div class="project-top">
+          <span class="project-idx">03 —</span>
+          <h3 class="project-name">Dam Monitoring Using Remote Sensing</h3>
+        </div>
+        <p class="project-desc">
+          A remote sensing project that analyses dam structural integrity and reservoir stability using satellite imagery and geospatial data. Utilises SAR (Synthetic Aperture Radar) backscatter analysis via Google Earth Engine and Sentinel-1 data to detect temporal changes in water extent and surface deformation. Outputs include slope stability maps, risk zone classification layers, and change detection GeoTIFFs — visualised in QGIS for spatial analysis and reporting.
+        </p>
+        <div class="project-tags">
+          <span class="p-tag">Remote Sensing</span>
+          <span class="p-tag">Google Earth Engine</span>
+          <span class="p-tag">Sentinel-1 SAR</span>
+          <span class="p-tag">QGIS</span>
+          <span class="p-tag">Geospatial Analysis</span>
+          <span class="p-tag">Python</span>
+        </div>
+      </div>
+      <a href="#" class="project-link-btn" title="View Project">&#8599;</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section reveal" id="education">
+  <div class="container">
+    <div class="s-header">
+      <span class="s-num">04</span>
+      <h2 class="s-title">Education</h2>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-year">2022 – 2026<br><span style="font-size:11px;color:#bbb;">Expected</span></div>
+      <div>
+        <div class="edu-degree">B.E — Computer Science &amp; Engineering</div>
+        <div class="edu-college">National Engineering College, Kovilpatti, Tamil Nadu</div>
+        <span class="edu-badge">Domain: Augmented &amp; Virtual Reality</span>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-year">2022<br><span style="font-size:11px;color:#bbb;">HSC</span></div>
+      <div>
+        <div class="edu-degree">Higher Secondary Certificate</div>
+        <div class="edu-college">Rosemary Matric Hr. Sec. School</div>
+        <span class="edu-badge">Score: 81%</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS & CERTIFICATES -->
+<section class="section reveal" id="achievements">
+  <div class="container">
+    <div class="s-header">
+      <span class="s-num">05</span>
+      <h2 class="s-title">Achievements &amp; Certificates</h2>
+    </div>
+
+    <div class="cert-item">
+      <div>
+        <div class="cert-org">NPTEL</div>
+        <div class="cert-name">Human Computer Interaction</div>
+        <div class="cert-desc">Scored 95% in the NPTEL HCI exam — covering principles of user-centred design, cognitive models, interface evaluation, and interaction design for digital systems.</div>
+      </div>
+      <a href="https://drive.google.com/file/d/1XHZ3kYVT-R3n9gVRIqMW8FO7zysCaGqc/view?usp=drivesdk" target="_blank" class="cert-view">View &#8599;</a>
+    </div>
+
+    <div class="cert-item">
+      <div>
+        <div class="cert-org">Course Certificate</div>
+        <div class="cert-name">Augmented Reality &amp; Virtual Reality</div>
+        <div class="cert-desc">Certification in AR/VR fundamentals including spatial computing, immersive environment design, and XR application development.</div>
+      </div>
+      <a href="https://drive.google.com/file/d/1KVUM435e-Vi2KnnYiLe4Ucuc8bBKeC10/view?usp=drivesdk" target="_blank" class="cert-view">View &#8599;</a>
+    </div>
+
+    <div class="cert-item">
+      <div>
+        <div class="cert-org">Prodigy Infotech</div>
+        <div class="cert-name">Internship Certificate</div>
+        <div class="cert-desc">Completed an industry internship at Prodigy Infotech, gaining hands-on experience in software development and professional engineering workflows.</div>
+      </div>
+      <a href="https://drive.google.com/file/d/1RXXjRv6keWcSa2ZNRqZNxvBM9PFdnK55/view?usp=drivesdk" target="_blank" class="cert-view">View &#8599;</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section reveal" id="contact">
+  <div class="container">
+    <div class="s-header">
+      <span class="s-num">06</span>
+      <h2 class="s-title">Contact</h2>
+    </div>
+    <div class="contact-body">
+      <div>
+        <p class="contact-intro">I'm open to internships, freelance collaborations, and interesting projects — especially in AR/VR, immersive design, and frontend development. Feel free to reach out.</p>
+        <a href="mailto:keerthana020706@gmail.com" class="contact-email">keerthana020706@gmail.com</a>
+
+        <!-- Contact Form -->
+        <div class="contact-form" id="contactForm">
+          <input type="text" id="cfName" placeholder="Your name" class="cf-input" />
+          <input type="email" id="cfEmail" placeholder="Your email" class="cf-input" />
+          <textarea id="cfMessage" placeholder="Your message" class="cf-input cf-textarea" rows="4"></textarea>
+          <button class="btn-primary" id="cfSubmit" type="button">Send Message</button>
+          <p class="cf-status" id="cfStatus"></p>
+        </div>
+      </div>
+
+      <div>
+        <div class="social-list">
+          <div class="social-row">
+            <span class="social-platform">LinkedIn</span>
+            <span class="social-handle">
+              <a href="https://www.linkedin.com/in/keerthana-g-15a820323" target="_blank" style="color:var(--magenta);">keerthana-g-15a820323</a>
+            </span>
+          </div>
+          <div class="social-row">
+            <span class="social-platform">GitHub</span>
+            <span class="social-handle">
+              <a href="https://github.com/Keerthana-glitch-debug" target="_blank" style="color:var(--magenta);">Keerthana-glitch-debug</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-name">Keerthana G.</div>
+    <div class="footer-copy">&copy; 2025 &mdash; All rights reserved</div>
+  </div>
+</footer>
+
+<!-- Back to top button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+<script src="script.js"></script>
+</body>
+</html>
